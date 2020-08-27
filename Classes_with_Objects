@@ -1,0 +1,118 @@
+// Sample #1
+
+/*class Person(var FullName: String = "Dikon", var Age: Int = 15){
+    init {
+        println("Person()")
+    }
+    init{
+        this.FullName
+        this.Age
+        println("Person($FullName $Age)")
+    }
+
+    fun Move(){
+        println("$FullName: $Age yearls old is dancing now")
+    }
+
+    fun Eat(){
+        println("$FullName: $Age yearls old eats a lot of sweets at moment")
+    }
+}
+fun Controling(){
+    val Dikon = Person()
+    Dikon.Move()
+    Dikon.Eat()
+}
+fun main() {
+    Controling()
+}*/
+
+//Sample #2
+
+/* open class Student(open var FirstName: String = "Brain",
+                   open var LastName: String = "Nikelson",
+                   open var AverageMark: Double = 5.1){
+
+    open fun getScholarship(){
+        if (AverageMark >= 5.0){
+            println("$LastName $FirstName's Scholarship is 100 com.")
+        }
+        else {
+            println("$LastName $FirstName's Scholarship is 80 com.")
+        }
+    }
+    open fun getScholarship1(){
+        if (AverageMark >= 5.0){
+            println("$LastName $FirstName's Scholarship is 200 com.")
+        }
+        else {
+            println("$LastName $FirstName's Scholarship is 180 com.")
+        }
+    }
+}
+
+class Aspirant(var Name: String,var AverageMark1: Double) :
+        Student(FirstName = Name,AverageMark = AverageMark1) {
+
+}
+fun Scholarship(){
+    val student_salary = Student()
+    student_salary.getScholarship()
+    val aspirant_salary = Aspirant(Name = "Tom", AverageMark1 = 4.0)
+    aspirant_salary.getScholarship1()
+}
+fun main(){
+    Scholarship()
+}
+*/
+
+// Sample #3
+
+/*
+open class Products(){
+    open var Name: String = "Donut"
+    open var Price: Int = 5
+    open var Score: Double = 7.8
+
+    fun printLn(){
+        println("$Name is $Price$ and has $Score score")
+    }
+
+}
+open class Rank{
+    open var Name1: String = "Cars"
+    open var products: Array<String> = arrayOf("BMW","Mercedes","Audi","Dodge","Wolkswagen")
+
+    fun print(){
+        println(Name1)
+        println(products.asList())
+    }
+
+}
+
+open class BB{
+    var product: ArrayList<Int> = ArrayList()
+}
+
+open class User(var Login: String = "Kotlin-Java",
+                var Password: String = "KotJav"){
+
+    fun print(){
+        println("Login: $Login, Password: $Password")
+    }
+}
+var userObj: User = User()
+
+fun Shop(){
+    var MyShop = Products()
+    var MyShop1 = Rank()
+    var MyShop3 = User()
+    MyShop.printLn()
+    MyShop1.print()
+    MyShop3.print()
+}
+
+fun main(){
+    Shop()
+}
+*/
